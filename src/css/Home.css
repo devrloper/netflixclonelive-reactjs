@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+
+    
+}
+.container1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Changed from 100vh to 100% */
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.logo{
+    height: 3vh;
+}
+.email {
+    background-color: transparent;
+    border: 1px solid #ccc; /* You can change the border color */
+    color: #fff; /* Text color */
+    padding: 30px;
+    width: 60%;
+    box-shadow: none;
+    margin-left: 50px;
+  }
+  
+  .email::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder color */
+  }
+  
+  .email:focus {
+    outline: none;
+    border-color: #fff; /* Border color on focus */
+  }
+  .btn1{
+    background-color: red;
+    padding: 30px;
+    margin-left: 12px;
+  }
+
+.p1{
+    color:white;
+     font-weight: 900;
+      font-size: 3.5rem;
+overflow-y:hidden;
+/* height: auto;
+width: auto; */
+}
+.p2{
+     font-size: 1.5rem;
+      color: white;
+}
+.p3{
+    font-size: 1.5rem;
+     color: white;
+}
+
+/* Small Mobile Devices (max-width: 320px) */
+/* Small Mobile Devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .input-group {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Space between email input and button */
+    }
+
+    .email {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .btn1 {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+        margin: 0; /* Remove margin if needed */
+    }
+
+    .p1 {
+        font-size: 1.6rem;
+    }
+
+    .p2, .p3 {
+        font-size: 0.8rem;
+    }
+}
+
+/* Medium Mobile Devices (max-width: 375px) */
+@media (max-width: 375px) {
+    .email, .btn1 {
+        width: 100%; /* Full width for both elements */
+        margin: 0; /* Remove any margins */
+    }
+
+    .email {
+        padding: 3px;
+        font-size: 0.1rem;
+    }
+
+    .btn1 {
+        font-size: 0.9rem;
+        padding: 3px;
+        margin-top: 8px; /* Space between input and button */
+    }
+
+    .p1 {
+        font-size: 1.8rem;
+    }
+
+    .p2, .p3 {
+        font-size: 1rem;
+    }
+}
+/* Large Mobile Devices (max-width: 425px) */
+@media (max-width: 425px) {
+    .email {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .btn1 {
+        width: 100%;
+        font-size: 1rem;
+        padding: 15px;
+       
+    }
+
+    .p1 {
+        font-size: 2rem;
+    }
+
+    .p2, .p3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .email {
+        width: 100%;
+        padding: 18px;
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .btn1 {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 18px;
+    
+    }
+
+    .p1 {
+        font-size: 2.5rem;
+    }
+
+    .p2, .p3 {
+        font-size: 1.25rem;
+    }
+}
+/* Laptops (min-width: 1024px) */
+@media (max-width: 1024px) {
+    .email {
+        width: 50%; /* Adjust width for larger screens */
+        padding: 25px;
+        font-size: 1.2rem;
+        margin-left: auto;
+        margin-right: auto; /* Center on larger screens */
+    }
+
+    .btn1 {
+        padding: 20px;
+        font-size: 1.2rem;
+       
+    }
+
+    .p1 {
+        font-size: 3rem; /* Adjust font size for larger screens */
+    }
+
+    .p2, .p3 {
+        font-size: 1.5rem;
+    }
+}
+
+   .trend{
+    color: white;
+    font-size: 2rem;
+    
+   }
+   .custom-dropdown-btn {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    color: white; /* Text color */
+    border: 1px solid white /* Light border for contrast */
+}
+
+.custom-dropdown-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
+    color: white;
+}
+
+.custom-dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8); /* Black with 80% opacity */
+}
+
+.custom-dropdown-menu .dropdown-item {
+    color: white; /* Text color for dropdown items */
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly visible background on hover */
+}
+
+.card1, .card2, .card3, .card4 {
+    background: linear-gradient(135deg, rgba(0, 150, 255, 0.6), rgba(255, 0, 0, 0.6));
+    border-radius: 15px;
+    min-height: 370px; /* Increase the height */
+    padding:30px; /* Increase the padding */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card1 h4, .card2 h4, .card3 h4, .card4 h4 {
+    font-size: 1.4rem; /* Increase title font size */
+    font-weight: bold;
+  }
+  
+  .card1 p, .card2 p, .card3 p, .card4 p {
+    font-size: 1rem; /* Increase description font size */
+    margin-top: 15px;
+  }
+  
+  .icon {
+    margin-top: auto;
+    width: 60px; /* Increase icon size */
+    height: 60px;
+  }
+  /* .box1{
+    margin-left:-2% ;
+  }
+   */
+   .slider img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin: 30px;
+    height: 45vh;
+  }
+  
+  .slick-prev, .slick-next {
+    font-size: 24px;
+    color: white;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: 10px;
+    background-color: white;
+  }
+  
+  .slick-next {
+    right: 80px;
+    background-color: white;
+  }
+  .slider-item {
+    position: relative;
+  }
+  .slider-number {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+    color:black;
+    border: 8px solid black;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }

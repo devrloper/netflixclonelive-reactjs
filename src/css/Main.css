@@ -1,0 +1,59 @@
+.row_poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row_posters {
+    display: flex;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    padding: 20px;
+}
+
+.row_poster:hover {
+    transform: scale(1.08); /* Apply scaling effect */
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.row_posterLarge {
+    max-height: 250px;
+}
+
+.row_posterLarge:hover {
+    transform: scale(1.03); /* Apply larger scaling effect */
+}
+
+.row {
+    color: white;
+    margin-left: 20px;
+}
+
+/* Add this CSS to your stylesheet */
+.slick-prev, .slick-next {
+    width: 40px; /* Adjust the width */
+    height: 40px; /* Adjust the height */
+    background-color: black; /* Black background */
+    color: white; /* White icon color */
+    border-radius: 50%; /* Circular buttons */
+    z-index: 1; /* Ensure buttons are above slider content */
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 24px; /* Adjust icon size */
+    color: white; /* White icon color */
+  }
+  
+  .slick-prev {
+    left: 10px; /* Adjust left position */
+  }
+  
+  .slick-next {
+    right: 10px; /* Adjust right position */
+  }
+  

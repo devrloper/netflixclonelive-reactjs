@@ -1,0 +1,27 @@
+/* Importing all CSS files */
+@import url("./Header.css");
+@import url("./Footer.css");
+@import url("./Home.css");
+@import url("./Accounts.css");
+@import url("./Login.css");
+@import url("./Signup.css");
+@import url("./Main.css");
+
+
+
+/* Defaults */
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  
+}
+
+/* Primary Variables */
+:root {
+  --primary: "green";
+}
+h1,h2,h3,h4,h5,h6{
+  overflow: hidden;
+}

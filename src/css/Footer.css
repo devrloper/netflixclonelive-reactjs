@@ -1,0 +1,64 @@
+/* footer Component Style */
+
+/* .row1{
+    background-color: black;
+    margin-top: 4%;
+    height: 50vh;
+} */
+.row1 {
+    background-color: black;
+    margin-top: 5%;
+    height: 50vh;
+}
+
+@media (max-width: 1200px) {
+    .row1 {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .row1 {
+        height: 50vh;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .row1 {
+        height: 50vh;
+        margin-top: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .row1 {
+        height: 50vh;
+        margin-top: 70%;
+    }
+}
+
+
+li{
+    color: rgb(171, 159, 159);
+}
+.foot{
+    margin-left: 13%;
+    margin-top: 6%;
+}
+li{
+    padding: 2px;
+    font-size: 1rem;
+}
+.fa-brands{
+    padding: 8%;
+}
+.btnn{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    /* width: 100%; */
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: black;
+    color: rgb(171, 159, 159);
+}

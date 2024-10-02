@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    position: relative;
+    background-image: url("../assets/Images/mainpic.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+body {
+    overflow-x: hidden;
+}
+#logo img {
+    height: 100px;
+    width: 200px;
+}
+.content {
+    position: relative;
+    z-index: 1;
+}
+.btn {
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+.btn:hover {
+    background-color: darkred;
+    border-color: darkred;
+}
+.heading-container {
+    position: absolute;
+    top: 40%;
+    left: 11%;
+    text-align: center;
+    color: white;
+}
+#head1 {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: 800;
+}
+#head2 {
+    font-size: 2.3vw; /* Responsive font size */
+}
+#head3 {
+    font-size: 2.2vw;
+}
+#Search {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    margin: 20px 0;
+    width: 40%;
+    background-color: rgba(22, 21, 21, 0.5); /* Semi-transparent background */
+    color: white; /* White text color */
+}
+#Search::placeholder {
+    color: white; /* Placeholder color */
+    opacity: 0.8; /* Slightly visible placeholder */
+}
+.btn1 {
+    background-color: red;
+    border-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn1:hover {
+    background-color: darkred;
+    border-color: darkred;
+}
+.btn1 .fa-arrow-right {
+    margin-left: 10px; /* Space between text and icon */
+}
+
+@media (max-width: 1200px) {
+    .btn1 {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .btn1 {
+        padding: 7px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn1 {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+
+    .btn1 .fa-arrow-right {
+        margin-left: 8px; /* Adjust spacing for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .btn1 {
+        padding: 5px 10px;
+        font-size: 0.6rem;
+    }
+
+    .btn1 .fa-arrow-right {
+        margin-left: 6px; /* Adjust spacing for very small screens */
+    }
+}

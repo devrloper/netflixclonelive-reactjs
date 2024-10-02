@@ -1,0 +1,86 @@
+/* Header Component Style */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* height: 8vh; */
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  /* z-index: 1; */
+  background-color: #111;
+  transition: all 0.5s;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav-icon:hover{
+  color: #e50914;
+}
+.nav-item:hover{
+  text-decoration: none;
+  color: #e50914;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Stack items vertically on small screens */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .nav-left {
+    width: 100%; /* Full width for nav-left */
+    justify-content: space-between; /* Space out items */
+  }
+
+  .nav-links {
+    display: flex; /* Keep links displayed */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width for links */
+    gap: 10px; /* Adjust gap */
+  }
+
+  .nav-item {
+    text-align: center; /* Center align items */
+    width: 100%; /* Full width for nav items */
+  }
+
+  .nav-right {
+    width: 100%; /* Full width for nav-right */
+    justify-content: flex-end; /* Align icons to the right */
+    margin-top: 10px; /* Add margin for spacing */
+  }
+}
+.nav_logo{
+  height: 4vh;
+}
